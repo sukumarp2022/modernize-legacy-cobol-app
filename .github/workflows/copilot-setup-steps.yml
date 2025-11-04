@@ -55,15 +55,21 @@ jobs:
             local dir=$1
             echo "Installing dependencies in $dir"
             (
-              cd "$dir"
+              cd "$dir" || exit 1
               if [ -f "package-lock.json" ]; then
                 echo "Found package-lock.json, using npm ci"
-                npm ci || { echo "ERROR: npm ci failed in $dir"; exit 1; }
+                npm ci
               else
                 echo "No package-lock.json found, using npm install"
-                npm install || { echo "ERROR: npm install failed in $dir"; exit 1; }
+                npm install
               fi
-            ) || { echo "WARNING: Failed to install dependencies in $dir"; return 1; }
+            )
+            local status=$?
+            if [ $status -ne 0 ]; then
+              echo "WARNING: Failed to install dependencies in $dir (exit code: $status)"
+              return 1
+            fi
+            return 0
           }
           
           found_package=false

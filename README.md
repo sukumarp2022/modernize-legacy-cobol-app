@@ -1,6 +1,8 @@
-# Modernizing  a Cobol accounting system to a Node.js application using GitHub Copilot
+# Modernizing a Cobol accounting system to a Node.js application using GitHub Copilot
 
 This repo contains COBOL code for a simple accounting system. You can use GitHub Copilot to transform this code to a Node.js accounting system.
+
+**✅ Node.js Conversion Complete!** The COBOL application has been successfully converted to Node.js. See [README-NODEJS.md](README-NODEJS.md) for instructions on running the Node.js version.
 
 **Note: Keep in mind GitHub Copilot is an AI pair programmer that helps you write code. It is not a code generator and is using generative
 models trained on public code. It may provide completions that are not perfect, safe, or otherwise suitable for production. Always review suggestions
@@ -136,6 +138,37 @@ Exiting the program. Goodbye!
 - data.cob: This program acts as a simple data storage, handling reading and writing of the balance.
 
 This multi-file structure introduces modularity, making it easier to manage and extend the program. Each file has a clear responsibility, and the program flow is driven by user interaction.
+
+## 🚀 Node.js Version
+
+The COBOL application has been successfully converted to Node.js! 
+
+### Quick Start
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run the Node.js application:
+```bash
+npm start
+```
+
+Or directly:
+```bash
+node main.js
+```
+
+### Node.js Files
+
+- **main.js** - Main program logic and user interface (converted from main.cob)
+- **operations.js** - Business operations module (converted from operations.cob)  
+- **data.js** - Data management module (converted from data.cob)
+- **package.json** - Project configuration and dependencies
+- **README-NODEJS.md** - Comprehensive Node.js documentation
+
+The Node.js version preserves all business logic and functionality from the COBOL application while implementing modern JavaScript patterns and best practices. See [README-NODEJS.md](README-NODEJS.md) for detailed documentation.
 
 ### Data flow
 

@@ -6,6 +6,3 @@ accountsystem
 
 # node_modules
 node_modules/
-
-# node-accounting-app
-node-accounting-app/*

@@ -1,0 +1,21 @@
+{
+  "name": "account-management-system",
+  "version": "1.0.0",
+  "description": "Modernized Node.js version of COBOL Account Management System",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accounting",
+    "cobol",
+    "modernization",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -49,6 +49,13 @@ This COBOL program simulates an account management system. This program will inv
 - Operations Program (operations.cob): This program will handle the actual operations like credit, debit, and view balance.
 - Data Storage Program (data.cob): This program will manage the storage of the account balance.
 
+## 📚 Documentation
+
+- **[COBOL_DOCUMENTATION.md](COBOL_DOCUMENTATION.md)** - Comprehensive business logic and code structure documentation
+- **[DIAGRAMS.md](DIAGRAMS.md)** - Visual diagrams showing architecture, data flow, and component interactions
+- **[TESTPLAN.md](TESTPLAN.md)** - Test plan for validating business logic
+- **[MODERNIZATION_ROADMAP.md](MODERNIZATION_ROADMAP.md)** - Step-by-step modernization workflow
+
 ## Steps to Compile and Run the Program
 
 - Option 1: Install COBOL compiler on MaC
@@ -131,6 +138,8 @@ Exiting the program. Goodbye!
 This multi-file structure introduces modularity, making it easier to manage and extend the program. Each file has a clear responsibility, and the program flow is driven by user interaction.
 
 ### Data flow
+
+📊 **For comprehensive diagrams including architecture, data flow, and component interactions, see [DIAGRAMS.md](DIAGRAMS.md)**
 
 ```text
 @workspace can you create a sequence diagram of the app showing the data flow of the app. Please create this in mermaid format so that I can render this in a markdown file.
